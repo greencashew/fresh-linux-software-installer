@@ -1,0 +1,56 @@
+# APT
+apt evolution
+apt evolution-ews
+apt curl
+apt git
+apt nmap
+apt wine
+apt gnome-tweaks
+apt npm
+apt howdoi
+
+# APP IMAGE LAUNCHER
+ppa:appimagelauncher-team/stable
+apt appimagelauncher
+
+# BRAVE
+apt apt-transport-https
+apt curl
+gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main > brave-browser-release.list
+brave-browser
+
+# DOCKER
+apt apt-transport-https
+apt ca-certificates
+apt curl
+apt gnupg-agent
+apt software-properties-common
+gpg https://download.docker.com/linux/ubuntu/gpg docker-archive-keyring.gpg
+deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu hirsute stable > docker.list
+apt docker-ce docker-ce-cli containerd.io docker-compose
+
+# Visual Studio Code
+gpg https://packages.microsoft.com/keys/microsoft.asc microsoft.asc
+deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main > vscode.list
+apt code
+
+# FLATPAK
+flatpak com.getferdi.Ferdi
+flatpak us.zoom.Zoom
+flatpak org.signal.Signal
+flatpak com.spotify.Client
+flatpak org.gimp.GIMP
+
+# SNAP
+snap opera
+snap kubectl --classic
+
+# DEBIAN PACKAGE DIRECT
+# KEYBASE
+debian https://prerelease.keybase.io/keybase_amd64.deb
+
+# APP IMAGES
+# LEDGER
+appimage https://download-live.ledger.com/releases/latest/download/linux ledger-live.AppImage
+script https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh

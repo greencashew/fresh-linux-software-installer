@@ -1,0 +1,5 @@
+org.gnome.nautilus.desktop home-icon-visible false
+org.gnome.nautilus.desktop trash-icon-visible false
+org.gnome.nautilus.desktop network-icon-visible false
+org.gnome.nautilus.desktop volumes-visible false
+org.gnome.desktop.background show-desktop-icons false

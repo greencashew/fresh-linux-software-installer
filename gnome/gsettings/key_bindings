@@ -1,0 +1,9 @@
+#Music
+org.gnome.settings-daemon.plugins.media-keys play ['<Primary><Alt>KP_Insert']
+org.gnome.settings-daemon.plugins.media-keys previous ['<Primary><Alt>Left']
+org.gnome.settings-daemon.plugins.media-keys next ['<Primary><Alt>Right']
+org.gnome.settings-daemon.plugins.media-keys volume-up ['<Primary><Alt>Up']
+org.gnome.settings-daemon.plugins.media-keys volume-down ['<Primary><Alt>Down']
+
+#Pomodoro
+org.gnome.pomodoro.preferences toggle-timer-key ['']

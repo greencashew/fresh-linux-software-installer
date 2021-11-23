@@ -1,0 +1,15 @@
+org.gnome.pomodoro.preferences enabled-plugins ['dark-theme', 'actions', 'sounds']
+org.gnome.pomodoro.preferences long-break-interval 2.0
+org.gnome.pomodoro.preferences show-screen-notifications true
+org.gnome.pomodoro.preferences pause-when-idle true
+org.gnome.pomodoro.preferences pomodoro-duration 1800.0
+org.gnome.pomodoro.preferences short-break-duration 120.0
+org.gnome.pomodoro.preferences long-break-duration 300.0
+org.gnome.pomodoro.plugins.gnome indicator-type 'icon'
+org.gnome.pomodoro.plugins.gnome hide-system-notifications true
+org.gnome.pomodoro.plugins.sounds pomodoro-start-sound 'loud-bell.ogg'
+org.gnome.pomodoro.plugins.sounds pomodoro-start-sound-volume 1.0
+org.gnome.pomodoro.plugins.sounds pomodoro-end-sound-volume 1.0
+org.gnome.pomodoro.plugins.sounds pomodoro-end-sound 'bell.ogg'
+org.gnome.pomodoro.plugins.sounds ticking-sound-volume 0.61935483870967745
+org.gnome.pomodoro.plugins.sounds ticking-sound ''
