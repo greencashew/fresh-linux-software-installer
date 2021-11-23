@@ -1,5 +1,60 @@
 #!/usr/bin/env bash
 
+###################################################################
+# INSTALL ALL SOFTWARE PACKAGES FROM software.list or given filename.
+# Author       	   Jan Górkiewicz (https://greencashew.dev)
+# Repository       https://github.com/greencashew/fresh-linux-software-installer/
+#
+# Usage:
+# Add GPG keyring
+# wget -O - https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor | sudo tee /usr/share/keyrings/docker-archive-keyring.gpg
+# gpg https://download.docker.com/linux/ubuntu/gpg docker-archive-keyring.gpg
+#
+# Add PPA repository
+# sudo add-apt-repository ppa:appimagelauncher-team/stable -y
+# ppa:appimagelauncher-team/stable
+#
+# Get public key form keyserver
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+# key:BBEBDCB318AD50EC6865090613B00F1FD2C19886
+#
+# Add apt source list
+# sudo print "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu hirsute stable" > /etc/apt/sources.list.d/docker.list
+# deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu hirsute stable > docker.list
+#
+# Install evolution
+# sudo apt install evolution -y
+# apt evolution
+#
+# Install debian package directly
+# sudo apt install -y /tmp/keybase_amd64.deb
+# debian https://prerelease.keybase.io/keybase_amd64.deb
+#
+# Install dnf package
+# sudo dnf install htop -y
+# dnf htop
+#
+# Install flatpak package
+# flatpak install flathub org.signal.Signal -y
+# flatpak org.signal.Signal
+#
+# Install Snap package
+# sudo snap install kubectl --classic
+# snap kubectl --classic
+#
+# AppImage installation to $HOME/Apps directory
+# $HOME/Apps/ledger-live.AppImage
+# appimage https://download-live.ledger.com/releases/latest/download/linux ledger-live.AppImage
+#
+# Run external script from url
+# wget -q -O - https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh | sudo bash
+# script https://raw.githubusercontent.com/LedgerHQ/udev-rules/master/add_udev_rules.sh
+#
+# Run command
+# mkdir /home/janek/test
+# command mkdir /home/janek/test
+###################################################################
+
 install_app_image() {
   appImageUrl=$1
   appImage=$2

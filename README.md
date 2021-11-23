@@ -8,6 +8,19 @@ Quicken migration from old to new linux machine.
 
 Directory: `/software`
 
+Commands supported:
+
+- apt (ppa, gpg, key, add list)
+- dnf
+- direct debian package
+- Flatpak
+- snap
+- appimage
+- external scripts
+- commands
+
+Example: [software.list](/software/software.list)
+
 Store all installation details into single or few configuration files.
 
 Currently available commands:

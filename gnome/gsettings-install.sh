@@ -1,5 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
+###################################################################
+# IMPORT GNOME SETTINGS FROM FILES UNDER /gsettings DIRECTORY.
+# Author       	   Jan Górkiewicz (https://greencashew.dev)
+# Repository       https://github.com/greencashew/fresh-linux-software-installer/
+###################################################################
 
 echo "-------------------------------------------------------------------------"
 echo "                    Update gnome settings                                "
